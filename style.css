@@ -135,6 +135,7 @@ a.work__item:hover {
 	display: block;
 	aspect-ratio: auto;
 	opacity: 1;
+  padding-bottom: 40px;
 }
 a.work__item img {
 	display: none;
