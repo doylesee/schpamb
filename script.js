@@ -21,11 +21,6 @@ $(document).ready(function(){
 					$('#work, .work__item').removeClass('active');
 			}
 	});
-	
-	// show ai-gen
-	if (window.location.href.includes('/post/')) {
-			$('#work, .work__item').addClass('active');
-	}
 });
 
 $(window).load(function() {
