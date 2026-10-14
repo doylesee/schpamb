@@ -8,7 +8,7 @@ $(document).ready(function(){
 			$('#work').toggleClass('active');
 
 			// 1. Toggle the clicked item and close others
-			$(this).toggleClass('active');
+			$(this).toggleClass('active').blur();
 			$('.work__item').not(this).removeClass('active');
 
 			$('html, body').animate({ scrollTop: 0 }, 500);
@@ -21,6 +21,11 @@ $(document).ready(function(){
 					$('#work, .work__item').removeClass('active');
 			}
 	});
+	
+	// show ai-gen
+	if (window.location.href.includes('/post/')) {
+			$('#work, .work__item').addClass('active');
+	}
 });
 
 $(window).load(function() {
