@@ -8,11 +8,17 @@ body {
 body.scroll { overflow: visible; }
 body.coma { overflow: hidden; }
 a {
-	color: #770077;
+	color: #777;
+	outline: 3px dashed rgba(255,255,255,0);
+	outline-offset: -3px;
 	text-decoration: none;
 	transition:.5s;
 }
 a:hover { opacity: 0.5; }
+a:focus {
+	outline: 3px dashed #fff;
+	outline-offset: -3px;
+}
 header,
 main,
 footer,
@@ -94,6 +100,7 @@ div {
 .header__nav a {
 	display: inline-block;
 	line-height: 50px;
+	padding: 0 10px;
 }
 .header__nav a svg {
 	height: 14px;
@@ -110,35 +117,35 @@ main {
 .work.active {
 	display: block;
 }
-.work__item {
+a.work__item {
 	aspect-ratio: 3/2;
 	display: flex;
 	overflow: hidden;
 	opacity: 1;
-	padding: 10px;
+	margin: 10px;
 	transition: 0.5s;
 }
-.work__item:hover {
+a.work__item:hover {
 	opacity: 0.2;
 }
-.work.active .work__item {
+.work.active a.work__item {
 	display: none;
 }
-.work.active .work__item.active {
+.work.active a.work__item.active {
 	display: block;
 	aspect-ratio: auto;
 	opacity: 1;
 }
-.work__item img {
+a.work__item img {
 	display: none;
 	height: 100%;
 	width: 100%;
 }
-.work__item img:first-child {
+a.work__item img:first-child {
 	display: block;
 	object-fit: cover;
 }
-.work__item.active img {
+a.work__item.active img {
 	display: block;
 	object-fit: contain;
 }
