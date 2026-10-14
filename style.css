@@ -142,9 +142,6 @@ main {
 	display: block;
 	object-fit: contain;
 }
-.work__item.agen {
-	display: none;
-}
 
 /* Footer section */
 .footer {
