@@ -166,6 +166,6 @@ main {
 
 @media only screen and (min-width: 1024px) {
 	.work {
-		grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+		/* grid-template-columns: repeat(3, 1fr); /* 3 items per row */
 	}
 }
