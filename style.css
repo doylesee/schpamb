@@ -120,16 +120,15 @@ main {
 a.work__item {
 	aspect-ratio: 3/2;
 	display: flex;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
 	overflow: hidden;
 	opacity: 1;
 	margin: 10px;
 	transition: 0.5s;
 }
 a.work__item:hover {
-  filter: none;
-  -webkit-filter: none;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.3;
 }
 .work.active a.work__item {
 	display: none;
