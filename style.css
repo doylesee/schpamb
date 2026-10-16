@@ -134,8 +134,10 @@ a.work__item:hover {
 	display: none;
 }
 .work.active a.work__item.active {
+  aspect-ratio: auto;
 	display: block;
-	aspect-ratio: auto;
+  filter: none;
+  -webkit-filter: none;
 	opacity: 1;
   padding-bottom: 40px;
 }
