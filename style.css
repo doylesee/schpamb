@@ -14,7 +14,7 @@ a {
 	text-decoration: none;
 	transition:.5s;
 }
-a:hover { opacity: 0.5; }
+a:hover { opacity: 0.3; }
 a:focus {
 	outline: 3px dashed #fff;
 	outline-offset: -3px;
@@ -120,13 +120,16 @@ main {
 a.work__item {
 	aspect-ratio: 3/2;
 	display: flex;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 	overflow: hidden;
 	opacity: 1;
 	margin: 10px;
 	transition: 0.5s;
 }
 a.work__item:hover {
-	opacity: 0.2;
+  filter: none;
+  -webkit-filter: none;
 }
 .work.active a.work__item {
 	display: none;
