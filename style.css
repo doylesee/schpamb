@@ -117,7 +117,7 @@ main {
 .work.active {
 	display: block;
 }
-a.work__item {
+.work__item {
 	aspect-ratio: 3/2;
 	display: flex;
 	overflow: hidden;
@@ -125,15 +125,15 @@ a.work__item {
 	margin: 10px;
 	transition: 0.5s;
 }
-a.work__item:hover {
+.work__item:hover {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   opacity: 0.3;
 }
-.work.active a.work__item {
+.work.active .work__item {
 	display: none;
 }
-.work.active a.work__item.active {
+.work.active .work__item.active {
   aspect-ratio: auto;
 	display: block;
   filter: none;
@@ -141,16 +141,16 @@ a.work__item:hover {
 	opacity: 1;
   padding-bottom: 40px;
 }
-a.work__item img {
+.work__item img {
 	display: none;
 	height: 100%;
 	width: 100%;
 }
-a.work__item img:first-child {
+.work__item img:first-child {
 	display: block;
 	object-fit: cover;
 }
-a.work__item.active img {
+.work__item.active img {
 	display: block;
 	object-fit: contain;
 }
