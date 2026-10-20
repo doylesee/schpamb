@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var current_year = new Date().getFullYear();
 	$('#current-year').text(current_year);
 
-	$(document).on('click', '.work__item', function (e) {
+	$(document).on('click', '.work__item:not(.ag)', function (e) {
 			e.stopPropagation(); 
 			$('#work').toggleClass('active');
 
