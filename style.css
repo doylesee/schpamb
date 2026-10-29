@@ -124,6 +124,10 @@ main {
 	opacity: 1;
 	margin: 10px;
 	transition: 0.5s;
+
+  /* Ensures absolute/flex children center properly */
+  justify-content: center;
+  align-items: center;
 }
 .work__item:hover {
   filter: grayscale(100%);
@@ -149,10 +153,20 @@ main {
 .work__item img:first-child {
 	display: block;
 	object-fit: cover;
+
+  /* Scale image to 120% and keep centered */
+  min-width: 130%;
+  min-height: 130%;
+  transform: scale(1.3);
+  transform-origin: center center;
 }
 .work__item.active img {
 	display: block;
 	object-fit: contain;
+
+  min-height: 0 !important;
+  min-width: 0 !important;
+  transform: none !important;
 }
 
 /* Footer section */
